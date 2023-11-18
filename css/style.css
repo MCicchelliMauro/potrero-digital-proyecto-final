@@ -1,0 +1,217 @@
+/* ** Comentario en CSS */
+/* 
+    !Pilares en css:
+        !Cascada
+        !Herencia
+        !Especificidad -> Esto dependerá del tipo de selector
+
+    * Tipos de Selectores:
+        Universal -> esta expresado por el símbolo del asterisco
+        Etiqueta -> por ejemplo body, h1, ul, a, img, video
+        Clase -> esta representado por el punto y un nombre
+        ID -> esta representado por el numeral y un nombre
+*/
+
+/* !Selector Universal. Reseteo de formato por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Selector Universal*/
+
+body {
+  font-family: "Playpen Sans", cursive, sans-serif;
+  background-image: url("../images/covercon_headset_mic_iconpattern.svg");
+  font-style: italic;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+}
+/* !EStilo que aplica a todas las imágenes y videos*/
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem;
+}
+.main {
+  min-height: 100vh;
+}
+
+.header__imagen {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.header__descripcion {
+  text-align: center;
+  font-size: 20px;
+}
+
+.header__titulo {
+  font-size: 40px;
+  font-weight: 700px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.section1 {
+  padding: 3rem;
+  min-height: 10vh;
+  font-style: serif;
+}
+
+.section1__lista {
+  list-style-type: none;
+  font-family: "Playpen Sans", cursive;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.section1__items {
+  text-decoration: none;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0,5rem;
+}
+.section1__enlace {
+  text-decoration: solid;
+  background-color: rgb(16, 19, 12);
+  border-radius: 15%;
+  padding: 1rem;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+ .section1__enlace:hover {
+  background-color: rgb(11, 73, 52);
+}
+
+.section2 {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2__video {
+  height: 400px;
+  width: 50%;
+  border-radius: 5%;
+}
+
+.section3 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0,5rem;
+  border-radius: 10%;
+  min-height: 10vh;
+}
+
+.section3__lista {
+  border-radius: 5%;
+  list-style-type: none;
+  font-family: "Playpen Sans", cursive;
+  font-size: 15px;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+    
+}
+
+.section3__items {
+  text-decoration: none;
+  background-color: rgb(16, 19, 12);
+  border-radius: 5%;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  }
+  .section3__items:hover {
+    background-color: rgb(11, 73, 52);
+  }
+.section3__enlace {
+  text-decoration: solid;
+}
+
+
+.section4 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row; /*aplica el eje principal*/
+  justify-content: center;
+}
+
+.section4__rockola {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 10%;
+  padding: 1rem;
+  height: auto;
+  width: auto;
+}
+
+/*Contacto*/
+
+.section5 {
+  padding: 6rem;
+}
+
+.section5__buton {
+  background-color: rgb(26, 69, 12);
+  border-color: rgb(26, 69, 12);
+}
+
+.section5__buton:hover {
+  background-color: rgb(11, 73, 52);
+  border-color: rgb(11, 73, 52) ;
+}
+.footer {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row; /*aplica el eje principal*/
+  justify-content: center; /*controla el eje principal dependiendo del flex-direction */
+}
+
+.footer__imagen {
+  border-radius: 5%;
+  padding: 1rem;
+  height: auto;
+  width: auto;
+}
+/*Medias queries*/
+
+@media(min-width: 900px) {
+  body {
+        background-image: url(../images/covercon_radio_iconpattern.svg);
+  }
+   
+}

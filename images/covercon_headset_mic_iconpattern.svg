@@ -1,0 +1,17 @@
+<svg version="1.1" 
+        baseProfile="full" 
+        width="1500" height="800"
+        viewbox="0 0 1500 800"
+        preserveAspectRatio="xMidYMid meet"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="#0e5248"/>
+        <rect width="100%" height="100%" fill="url(#pattern)"/>
+        <defs>
+          <pattern id="pattern" x="0" y="0" width="34" height="34" patternTransform="rotate(330) scale(2)" patternUnits="userSpaceOnUse">
+              <g>
+                <path fill="#00392f" d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h4v1h-7v2h6c1.66 0 3-1.34 3-3V10c0-4.97-4.03-9-9-9z"/>
+              </g>
+          </pattern>
+        </defs>
+      </svg>
+      
