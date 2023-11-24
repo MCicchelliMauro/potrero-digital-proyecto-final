@@ -2,5 +2,6 @@
     "cSpell.language": "en,es-ES",
     "workbench.colorTheme": "One Dark Pro Flat",
     "editor.fontFamily": "JetBrains Mono",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "liveServer.settings.port": 5501,
 }
