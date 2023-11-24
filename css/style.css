@@ -23,35 +23,39 @@
 
 body {
   font-family: "Playpen Sans", cursive, sans-serif;
-  background-image: 
-  url(../images/covercon_radio_iconpattern.svg);
+  background-image: url(../images/covercon_radio_iconpattern.svg);
   background-repeat: no-repeat;
   background-size: cover;
   font-style: italic;
   color: #ffffff;
-  
 }
-.header,.main,.footer {
+
+.header,
+.main,
+.footer {
   max-width: 600px;
   margin: 0 auto;
-  
 }
+
 a {
   color: inherit;
 }
 
 h1 {
-	text-wrap: balance;
+  text-wrap: balance;
 }
+
 /* !EStilo que aplica a todas las imágenes y videos*/
 img,
 video,
 iframe {
   max-width: 100%;
   height: auto;
-  margin: 0  auto;
+  margin: 0 auto;
 }
-ul, ol {
+
+ul,
+ol {
   list-style-position: inside;
   padding: 0;
 }
@@ -61,8 +65,8 @@ ul, ol {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 .main {
   min-height: 100vh;
 }
@@ -77,7 +81,6 @@ ul, ol {
   text-align: center;
   font-size: 20px;
   text-wrap: balance;
-
 }
 
 .header__titulo {
@@ -89,7 +92,6 @@ ul, ol {
 
 .section1 {
   padding: 2rem;
-  
 }
 
 .section1__lista {
@@ -100,7 +102,7 @@ ul, ol {
 }
 
 .section1__items {
-  background-color:  rgb(11, 16, 7);
+  background-color: rgb(11, 16, 7);
   border-radius: 0.5rem;
   list-style: none;
   -webkit-border-radius: 0.5rem;
@@ -108,19 +110,22 @@ ul, ol {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 }
+
 .section1__enlace {
   display: block;
   text-decoration: none;
   padding: 1rem;
 }
- .section1__items:hover {
+
+.section1__items:hover {
   background-color: rgb(11, 73, 52);
 }
+
 /* Estilo de la sección 2 */
 .section2 {
   padding: 2rem;
-  
 }
+
 .section2__video {
   width: 80%;
   aspect-ratio: 16/9;
@@ -128,7 +133,6 @@ ul, ol {
   margin: 0 auto;
   display: block;
   border-radius: 5%;
-  
 }
 
 /* Estilo de la sección 3 */
@@ -146,10 +150,10 @@ ul, ol {
   list-style: none;
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   padding: 2rem;
-  gap: 10%;    
+  gap: 10%;
 }
 
 .section3__items {
@@ -159,16 +163,17 @@ ul, ol {
   display: flex;
   align-items: center;
   padding: 1rem;
-  }
-  .section3__items:hover {
-    background-color: rgb(11, 73, 52);
-  }
+}
+
+.section3__items:hover {
+  background-color: rgb(11, 73, 52);
+}
 
 .section3__enlace {
   text-decoration: none;
   font-size: 1rem;
-
 }
+
 /* Estilo de la sección 4 */
 .section4 {
   padding: 1rem;
@@ -182,7 +187,6 @@ ul, ol {
   display: block;
   max-width: 300px;
   margin: 0 auto;
-  
 }
 
 /* Estilo de la sección 5 (Contacto) */
@@ -190,20 +194,20 @@ ul, ol {
 .section5 {
   padding: 2rem;
   display: block;
-  
 }
+
 .section5__lista {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 1rem;
-  
 }
+
 .section5__buton {
   background-color: rgb(16, 19, 12);
   border-color: rgb(16, 19, 12);
   text-decoration: none;
-  gap: 1rem ;
+  gap: 1rem;
   display: block;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -215,15 +219,15 @@ ul, ol {
 
 .section5__buton:hover {
   background-color: rgb(11, 73, 52);
-  border-color: rgb(11, 73, 52) ;
+  border-color: rgb(11, 73, 52);
 }
 
 /* Estilo del pie de página */
 .footer {
   padding: 1rem;
   display: flex;
-  flex-direction: row; 
-  justify-content: center; 
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer__imagen {
@@ -231,28 +235,28 @@ ul, ol {
   margin: 0 auto;
   display: block;
 }
+
 /*Medias queries*/
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   body {
-        background-image: url("../images/covercon_headset_mic_iconpattern.svg");
+    background-image: url("../images/covercon_headset_mic_iconpattern.svg");
   }
 
-.header__titulo {
-  font-size: 2rem;
-  font-weight: 200;
-   
-}
-.header__descripcion {
-  text-align: center;
-  font-size: 0.5rem;
-  text-wrap: balance;
+  .header__titulo {
+    font-size: 2rem;
+    font-weight: 200;
+  }
 
-}
+  .header__descripcion {
+    text-align: center;
+    font-size: 0.5rem;
+    text-wrap: balance;
+  }
 
-   .section2__video {
+  .section2__video {
     width: 80%;
-     height: auto;
-    max-width: none; 
+    height: auto;
+    max-width: none;
   }
 }
